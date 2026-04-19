@@ -1,0 +1,55 @@
+{
+  "id": "travel",
+  "title": "Viaje",
+  "items": [
+    { "id": "t1", "type": "card", "front": { "lang": "es", "text": "Viaje" }, "back": { "lang": "en", "text": "Trip" }, "meta": { "topic": "General", "level": "A1" } },
+    { "id": "t2", "type": "card", "front": { "lang": "es", "text": "Aeropuerto" }, "back": { "lang": "en", "text": "Airport" }, "meta": { "topic": "Aeropuerto", "level": "A1" } },
+    { "id": "t3", "type": "card", "front": { "lang": "es", "text": "Avión" }, "back": { "lang": "en", "text": "Plane" }, "meta": { "topic": "Transporte", "level": "A1" } },
+    { "id": "t4", "type": "card", "front": { "lang": "es", "text": "Maleta" }, "back": { "lang": "en", "text": "Suitcase" }, "meta": { "topic": "Equipaje", "level": "A1" } },
+    { "id": "t5", "type": "card", "front": { "lang": "es", "text": "Pasaporte" }, "back": { "lang": "en", "text": "Passport" }, "meta": { "topic": "Documentos", "level": "A1" } },
+    { "id": "t6", "type": "card", "front": { "lang": "es", "text": "Billete" }, "back": { "lang": "en", "text": "Ticket" }, "meta": { "topic": "Documentos", "level": "A1" } },
+
+    { "id": "t7", "type": "card", "front": { "lang": "es", "text": "¿Dónde está la puerta?" }, "back": { "lang": "en", "text": "Where is the gate?" }, "meta": { "topic": "Aeropuerto", "level": "A2" } },
+    { "id": "t8", "type": "card", "front": { "lang": "es", "text": "Vuelo retrasado" }, "back": { "lang": "en", "text": "Delayed flight" }, "meta": { "topic": "Aeropuerto", "level": "A2" } },
+    { "id": "t9", "type": "card", "front": { "lang": "es", "text": "Equipaje de mano" }, "back": { "lang": "en", "text": "Carry-on luggage" }, "meta": { "topic": "Equipaje", "level": "A2" } },
+    { "id": "t10", "type": "card", "front": { "lang": "es", "text": "Facturar equipaje" }, "back": { "lang": "en", "text": "Check in luggage" }, "meta": { "topic": "Aeropuerto", "level": "A2" } },
+
+    { "id": "t11", "type": "card", "front": { "lang": "es", "text": "Hotel" }, "back": { "lang": "en", "text": "Hotel" }, "meta": { "topic": "Alojamiento", "level": "A1" } },
+    { "id": "t12", "type": "card", "front": { "lang": "es", "text": "Habitación" }, "back": { "lang": "en", "text": "Room" }, "meta": { "topic": "Alojamiento", "level": "A1" } },
+    { "id": "t13", "type": "card", "front": { "lang": "es", "text": "Reserva" }, "back": { "lang": "en", "text": "Reservation" }, "meta": { "topic": "Alojamiento", "level": "A1" } },
+
+    { "id": "t14", "type": "card", "front": { "lang": "es", "text": "Tengo una reserva" }, "back": { "lang": "en", "text": "I have a reservation" }, "meta": { "topic": "Hotel", "level": "A2" } },
+    { "id": "t15", "type": "card", "front": { "lang": "es", "text": "¿A qué hora es el check-in?" }, "back": { "lang": "en", "text": "What time is check-in?" }, "meta": { "topic": "Hotel", "level": "A2" } },
+    { "id": "t16", "type": "card", "front": { "lang": "es", "text": "¿Incluye desayuno?" }, "back": { "lang": "en", "text": "Is breakfast included?" }, "meta": { "topic": "Hotel", "level": "A2" } },
+
+    { "id": "t17", "type": "card", "front": { "lang": "es", "text": "Taxi" }, "back": { "lang": "en", "text": "Taxi" }, "meta": { "topic": "Transporte", "level": "A1" } },
+    { "id": "t18", "type": "card", "front": { "lang": "es", "text": "Autobús" }, "back": { "lang": "en", "text": "Bus" }, "meta": { "topic": "Transporte", "level": "A1" } },
+    { "id": "t19", "type": "card", "front": { "lang": "es", "text": "Tren" }, "back": { "lang": "en", "text": "Train" }, "meta": { "topic": "Transporte", "level": "A1" } },
+
+    { "id": "t20", "type": "card", "front": { "lang": "es", "text": "¿Cuánto cuesta el billete?" }, "back": { "lang": "en", "text": "How much is the ticket?" }, "meta": { "topic": "Transporte", "level": "A2" } },
+    { "id": "t21", "type": "card", "front": { "lang": "es", "text": "Quiero ir al centro" }, "back": { "lang": "en", "text": "I want to go downtown" }, "meta": { "topic": "Transporte", "level": "A2" } },
+    { "id": "t22", "type": "card", "front": { "lang": "es", "text": "¿Está lejos?" }, "back": { "lang": "en", "text": "Is it far?" }, "meta": { "topic": "Direcciones", "level": "A2" } },
+
+    { "id": "t23", "type": "card", "front": { "lang": "es", "text": "Mapa" }, "back": { "lang": "en", "text": "Map" }, "meta": { "topic": "Direcciones", "level": "A1" } },
+    { "id": "t24", "type": "card", "front": { "lang": "es", "text": "Dirección" }, "back": { "lang": "en", "text": "Address" }, "meta": { "topic": "Direcciones", "level": "A1" } },
+
+    { "id": "t25", "type": "card", "front": { "lang": "es", "text": "¿Cómo llego allí?" }, "back": { "lang": "en", "text": "How do I get there?" }, "meta": { "topic": "Direcciones", "level": "A2" } },
+    { "id": "t26", "type": "card", "front": { "lang": "es", "text": "Gira a la derecha" }, "back": { "lang": "en", "text": "Turn right" }, "meta": { "topic": "Direcciones", "level": "A2" } },
+    { "id": "t27", "type": "card", "front": { "lang": "es", "text": "Gira a la izquierda" }, "back": { "lang": "en", "text": "Turn left" }, "meta": { "topic": "Direcciones", "level": "A2" } },
+
+    { "id": "t28", "type": "card", "front": { "lang": "es", "text": "Turista" }, "back": { "lang": "en", "text": "Tourist" }, "meta": { "topic": "General", "level": "A1" } },
+    { "id": "t29", "type": "card", "front": { "lang": "es", "text": "Guía" }, "back": { "lang": "en", "text": "Guide" }, "meta": { "topic": "General", "level": "A1" } },
+    { "id": "t30", "type": "card", "front": { "lang": "es", "text": "Excursión" }, "back": { "lang": "en", "text": "Excursion" }, "meta": { "topic": "Actividades", "level": "A1" } },
+
+    { "id": "t31", "type": "card", "front": { "lang": "es", "text": "Reservé una excursión" }, "back": { "lang": "en", "text": "I booked an excursion" }, "meta": { "topic": "Actividades", "level": "B1" } },
+    { "id": "t32", "type": "card", "front": { "lang": "es", "text": "El paisaje es increíble" }, "back": { "lang": "en", "text": "The landscape is amazing" }, "meta": { "topic": "Experiencias", "level": "B1" } },
+    { "id": "t33", "type": "card", "front": { "lang": "es", "text": "Me perdí en la ciudad" }, "back": { "lang": "en", "text": "I got lost in the city" }, "meta": { "topic": "Experiencias", "level": "B1" } },
+    { "id": "t34", "type": "card", "front": { "lang": "es", "text": "La experiencia fue inolvidable" }, "back": { "lang": "en", "text": "The experience was unforgettable" }, "meta": { "topic": "Experiencias", "level": "B1" } },
+    { "id": "t35", "type": "card", "front": { "lang": "es", "text": "Prefiero viajar en temporada baja" }, "back": { "lang": "en", "text": "I prefer to travel in low season" }, "meta": { "topic": "Preferencias", "level": "B1" } },
+    { "id": "t36", "type": "card", "front": { "lang": "es", "text": "Viajar amplía la mente" }, "back": { "lang": "en", "text": "Travel broadens the mind" }, "meta": { "topic": "Reflexión", "level": "B1" } },
+    { "id": "t37", "type": "card", "front": { "lang": "es", "text": "Tuve problemas con el equipaje" }, "back": { "lang": "en", "text": "I had problems with my luggage" }, "meta": { "topic": "Problemas", "level": "B1" } },
+    { "id": "t38", "type": "card", "front": { "lang": "es", "text": "El vuelo fue cancelado" }, "back": { "lang": "en", "text": "The flight was canceled" }, "meta": { "topic": "Problemas", "level": "B1" } },
+    { "id": "t39", "type": "card", "front": { "lang": "es", "text": "Perdí mi pasaporte" }, "back": { "lang": "en", "text": "I lost my passport" }, "meta": { "topic": "Problemas", "level": "B1" } },
+    { "id": "t40", "type": "card", "front": { "lang": "es", "text": "Necesito contactar a la embajada" }, "back": { "lang": "en", "text": "I need to contact the embassy" }, "meta": { "topic": "Problemas", "level": "B1" } }
+  ]
+}

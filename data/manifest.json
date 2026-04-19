@@ -1,0 +1,38 @@
+{
+  "name": "Aprende Español",
+  "short_name": "Español",
+  "description": "App básica para estudiar español: flashcards, quiz y progreso offline.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0d14",
+  "theme_color": "#10121a",
+  "lang": "es",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "version": 1,
+  "decks": [
+    {
+      "id": "basics",
+      "title": "Básico A1",
+      "file": "./decks/basics.json",
+      "tags": ["A1", "saludos", "cortesia"]
+    },
+    {
+      "id": "travel",
+      "title": "Viaje A1",
+      "file": "./decks/travel.json",
+      "tags": ["A1", "viaje"]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "basics_mcq",
+      "title": "Quiz Básico (Multiple Choice)",
+      "file": "./quizzes/basics_mcq.json",
+      "deckId": "basics"
+    }
+  ]
+}

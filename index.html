@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AprendEspa</title>
+
+  <meta name="theme-color" content="#10121a" />
+  <meta name="color-scheme" content="dark light" />
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-row">
+      <div>
+        <p class="eyebrow">Learn Spanish</p>
+        <h1>AprendEspa</h1>
+      </div>
+    </div>
+
+    <div class="hero card compact">
+      <div>
+        <div class="progress-line" aria-hidden="true">
+          <div id="studyProgressBar" class="progress-line-fill"></div>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <label class="field-label" for="deckSelect">Deck</label>
+        <select id="deckSelect" class="select"></select>
+      </div>
+    </div>
+  </header>
+
+  <div id="appMessage" class="app-message" aria-live="polite"></div>
+
+  <section id="studyArea" class="hidden">
+    <nav class="tabs container" role="tablist" aria-label="Secciones">
+      <button class="tab active" data-view="flashcards" role="tab" aria-selected="true">Flashcards</button>
+      <button class="tab" data-view="quiz" role="tab" aria-selected="false">Quiz</button>
+      <button class="tab" data-view="progress" role="tab" aria-selected="false">Progress</button>
+    </nav>
+
+    <main class="container" role="main">
+      <section id="flashcards" class="view active" aria-label="Flashcards">
+        <div class="card">
+          <div class="card-header split">
+            <div>
+              <h2>Flashcards</h2>
+              <p class="muted">Haz click en la tarjeta para ver la traducción.</p>
+            </div>
+            <div id="flashcardCounter" class="pill">0 / 0</div>
+          </div>
+
+          <button id="flashcardBtn" class="flashcard" type="button" aria-live="polite">
+            <div class="flashcard-label">ES</div>
+            <div id="flashcardText" class="flashcard-text"></div>
+            <div class="flashcard-hint muted">Haz click para voltear</div>
+          </button>
+
+          <div class="row two-columns">
+            <button id="prevCard" class="btn" type="button">← Anterior</button>
+            <button id="nextCard" class="btn primary" type="button">Siguiente →</button>
+          </div>
+
+          <div class="row three-columns">
+            <button id="markKnown" class="btn success" type="button">I know it</button>
+            <button id="markLearning" class="btn" type="button">I don't know it</button>
+            <button id="clearCardStatus" class="btn ghost" type="button">Clear status</button>
+          </div>
+
+          <div class="muted small" id="contentInfo"></div>
+          <div class="muted tiny">Atajos: espacio para voltear, flechas para navegar.</div>
+        </div>
+      </section>
+
+      <section id="quiz" class="view" aria-label="Quiz">
+        <div class="card">
+          <div class="card-header">
+            <h2>Quiz</h2>
+            <p class="muted">Te mostramos primero lo que necesitas reforzar.</p>
+          </div>
+
+          <div class="quiz-box">
+            <div class="pill muted" id="quizMeta"></div>
+            <div class="question" id="quizQuestion"></div>
+            <div class="answers" id="quizAnswers"></div>
+
+            <div class="row two-columns">
+              <button id="nextQuestion" class="btn primary" type="button">Siguiente</button>
+              <button id="resetQuiz" class="btn" type="button">Reiniciar score</button>
+            </div>
+
+            <div id="quizFeedback" class="feedback" aria-live="polite"></div>
+            <div class="muted tiny">Atajo: N para otra pregunta.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress" class="view" aria-label="Progreso">
+        <div class="card">
+          <div class="card-header">
+            <h2>Progreso</h2>
+            <p class="muted">Se guarda solo en este dispositivo.</p>
+          </div>
+
+          <div class="grid grid-4">
+            <div class="stat">
+              <div class="stat-value" id="statKnown">0</div>
+              <div class="stat-label muted">Conocidas</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="statLearning">0</div>
+              <div class="stat-label muted">Repasar</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="statRemaining">0</div>
+              <div class="stat-label muted">Pendientes</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="statQuizScore">0%</div>
+              <div class="stat-label muted">Acierto</div>
+            </div>
+          </div>
+
+          <div class="row three-columns">
+            <button id="exportData" class="btn" type="button">Exportar JSON</button>
+            <button id="importData" class="btn" type="button">Importar JSON</button>
+            <button id="wipeData" class="btn danger" type="button">Borrar progreso</button>
+          </div>
+
+          <textarea id="dataBox" class="textbox" rows="8" placeholder="Aquí sale o entra el JSON..."></textarea>
+
+          <details class="muted small details-box">
+            <summary>Estado de cache y offline</summary>
+            <div id="cacheInfo" class="small"></div>
+          </details>
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <footer class="footer muted">
+    AprendEspa • Flashcards, quiz y progreso offline
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
